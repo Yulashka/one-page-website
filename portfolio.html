@@ -1,248 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <title> My portfolio</title>
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider-min.css" rel="stylesheet" type="text/css">
+    <link href="css/stylesheet.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Droid+Serif' rel='stylesheet' type='text/css'>
     
-    <body>
-    <img src="#" alt="nice logo">
-        <nav>
-        <ul>
-            <li><a href="#"> Specialties</a></li>  
-            <li><a href="#"> Profile</a></li>
-            <li><a href="#"> Portfolio</a></li>
-            <li><a href="#"> Contact</a></li>
-            </ul> 
-        </nav>
-        <p>Here goes Jumbotron</p>
-            <p>Learn More</p>
-        <h1>My Services</h1>
-        <p>Front End</p>
-        
-        <div>
-        <img src="#" alt="logo1">
-            <h2>Clean HTML5 Code</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-         <div>
-        <img src="#" alt="logo2">
-            <h2>Modern CSS3 styles</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-         <div>
-        <img src="#" alt="logo3">
-            <h2>Responsive Design</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-        
-        <h1> Latest Projects</h1>
-        <h2> NUFF - Agency Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
-</p>
-        <button> <a href="#">Visit Website</a></button>
-        
-        <img src="#" alt="picture of a NUFF website">
-        
-        
-                <img src="#" alt="picture of a beauty blog">
-        <h2> Lyudmila - Beaty Blog</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.</p>
-                <button> <a href="#">Visit Website</a></button>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/jquery.flexslider-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
+    
 
-        <p>Some famous saying goes here to make this website look fancy</p>
-        
-        
-        <h1>My Profile</h1>
-        <img src="#" alt="my picture">
-        <h2>Iuliia Zemliana</h2>
-        <h3>Front End Developer</h3>
-        <p>I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
-</p>
-        
-        <p>Creating is not just a job for me, it's a passion. 
-</p>
-        
-                <button> <a href="#">My Portfolio</a></button>
-<div> Some staff goes here</div>
-        
-        <p> Just an example of my work</p>
-        <ul>
-        <li><a href="#">All Items</a></li>
-         <li><a href="#">Web</a></li>
-         <li><a href="#">Print</a></li>
-          <li><a href="#">Video</a></li>
-        </ul>
-        
-        <a>
-            <img src="#" alt="project image1">
-            <div>
-                <!--Project Title -->
-                <h2>Project with Slider</h2>
-                <!--Project Subtitle -->
-                <p>Broshure design</p>
-            </div>
-        </a>
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+            $('.flexslider').flexslider();
+            $('.chart').easyPieChart({
+                //your configuration goes here
+                barColor: '#1eefe8',
+                size: 210,
+                trackColor: '#11161b',
+                scaleColor: '#11161b',
+             });
+        });
+    </script>
 
-        <a>
-            <img src="#" alt="project image2">
-            <div>
-                <!--Project Title -->
-                <h2>Video Project</h2>
-                <!--Project Subtitle -->
-                <p>Youtube Video</p>
+</head>
+
+
+<body>
+    <!-- ============================
+               Main NAV
+   ============================ -->
+    <div id="main-nav" class="navbar navbar-fixed-top scrolled">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">
+                    <img src="pics/RSVP_Logo.jpg" alt="nice logo">
+                </a>
             </div>
-        </a>
-        
-         <a>
-            <img src="#" alt="project image3">
-            <div>
-                <!--Project Title -->
-                <h2>Fullwodth Images</h2>
-                <!--Project Subtitle -->
-                <p>Professional Web Design</p>
-            </div>
-        </a>
-        
-        <a>
-            <img src="#" alt="project image4">
-            <div>
-                <!--Project Title -->
-                <h2>Another Video Project</h2>
-                <!--Project Subtitle -->
-                <p>Vimeo Video</p>
-            </div>
-        </a>
-        
-        
-          <a>
-            <img src="#" alt="project image5">
-            <div>
-                <!--Project Title -->
-                <h2>Project with slider</h2>
-                <!--Project Subtitle -->
-                <p>Modern Business Card</p>
-            </div>
-        </a>
-        
-        <a>
-            <img src="#" alt="project image6">
-            <div>
-                <!--Project Title -->
-                <h2>Fullwidth Images</h2>
-                <!--Project Subtitle -->
-                <p>Poster Design</p>
-            </div>
-        </a>
-        
-        
-          <a>
-            <img src="#" alt="project image7">
-            <div>
-                <!--Project Title -->
-                <h2>Project with Slider</h2>
-                <!--Project Subtitle -->
-                <p>Personal Business Card</p>
-            </div>
-        </a>
-        
-          <a>
-            <img src="#" alt="project image8">
-            <div>
-                <!--Project Title -->
-                <h2>Video Project</h2>
-                <!--Project Subtitle -->
-                <p>Vimeo Video</p>
-            </div>
-        </a>
-        
-        
-        <a>
-            <img src="#" alt="project image9">
-            <div>
-                <!--Project Title -->
-                <h2>Project with Slider</h2>
-                <!--Project Subtitle -->
-                <p>Professional Brand Identity</p>
-            </div>
-        </a>
-        
-        <a>
-            <img src="#" alt="project image11">
-            <div>
-                <!--Project Title -->
-                <h2>Another Video Project</h2>
-                <!--Project Subtitle -->
-                <p>Vimeo Video</p>
-            </div>
-        </a>
-        
-        <a>
-            <img src="#" alt="project image12">
-            <div>
-                <!--Project Title -->
-                <h2>Fullwidth Images</h2>
-                <!--Project Subtitle -->
-                <p>Creative Business Card</p>
-            </div>
-        </a>
-        
-         <a>
-            <img src="#" alt="project image13">
-            <div>
-                <!--Project Title -->
-                <h2>Video Project</h2>
-                <!--Project Subtitle -->
-                <p>Youtube Video</p>
-            </div>
-        </a>
-        
-    <p>Like what you see? Contact me to discuss about your project!</p>    
-        <button> <a href="#"> Contact Me</a></button>
-        
-        <h1> Happy Clients</h1>
-        <p>See what people say about my work</p>
-        
-        <div>
-        <img src="#">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra”
-</p>
-            <p>John Doe / Google Inc.</p>
+            <nav id="site-nav" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class>
+                        <a href="#services">
+                            <i class="fa fa-cog"></i> Specialties
+                        </a>
+                    </li>
+                    <li class>
+                        <a href="#about">
+                            <i class="fa fa-graduation-cap"></i> Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            <i class="fa fa-briefcase"></i> Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
-        <div>
-        <img src="#">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra”
-</p>
-            <p>John Doe / Google Inc.</p>
+    </div>
+
+    <!-- End main-nav 
+================================== -->
+    
+    <!-- ==========================
+=============== HEADER
+========================= -->
+
+    <header id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h1> I am Iuliia Zemliana</h1>
+                    <h2>
+                        <span class="main-color">D</span>esigner, 
+                        <span class="main-color">D</span>eveloper, 
+                        <span class="main-color">D</span>reamer
+                    </h2>
+                </div>
+            </div>
+            <div class="header-img scrollimation fade-up d1 in">
+                <img src="pics/baby.jpg" alt="photo">
+            </div>
         </div>
-        
-        <h1>Contact Me</h1>
-        <p>I am available for freelance. 
-Can't wait for the next exciting project! Could it be yours?</p>
+    </header>
+    <!-- end of Header -->
 
-        <p>John Doe
-W325 State Road 123
-Mondovi, WI(Wisconsin) 98746-54321
-(123) 456 - 7890 </p> 
-        <ul>
-        <li>Name</li>
-        <li>Email</li>
-        <li>Message</li>
-        </ul>
-        <a href="#">Send It</a>
-
-        <img src="#" alt="nice logo">
-       <nav>
-        <ul>
-            <li><a href="#"> Home</a></li>  
-            <li><a href="#"> Services</a></li>
-            <li><a href="#"> Portfolio</a></li>
-            <li><a href="#"> Contact</a></li>
-            </ul> 
-        </nav>
-        
-        
-        
-        
-    </body>
+    <!-- =================
+              MY SERVICES
+          ======================================== -->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center section-header">My Services</h1>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-4 text-center service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-html5 fa-5x"></i>
+                    </div>
+                    <h2>Clean HTML5 Code</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4  text-center service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-css3 fa-5x"></i>
+                    </div>
+                    <h2>Modern CSS3 styles</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-4 text-center service-item">
+                    <div class="service-icon">
+                        <i class="fa fa-mobile fa-5x"></i>
+                    </div>
+                    <h2>Responsive Design</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============================
+                LATEST PROJECTS
+    ================================== -->
+    <section>
+        <div class="container">
+            <h1 class="text-center section-header"> Latest Project</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2> LED - Agency Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
+                    </p>
+                    <p><a class="btn" href="#link">Visit Website</a>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-sm-offset">
+                    <img class="img-responsive" src="pics/website.jpg" alt="picture of a NUFF website">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+    <!-- ===================================
+        ==============Contact Me =================== -->
+    <section>
+        <div class="container text-center">
+            <p>Logic will get you from A to B. Imagination will take you everywhere.</p>
+            <a class="btn" href="#contact">Contact Me</a>
+        </div>
+    </section>
+    <!-- ===============================
+               ABOUT 
+           ================================== -->
+    <section id="about">
+        <div class="container">
+            <h1 class="text-center section-header">My Profile</h1>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 tex-center">
+                    <figure>
+                        <img class="img-responsive img-circle center-block" src="pics/jane_doe.jpg" alt="my picture">
+                        <figcaption class="text-center">That's Me!</figcaption>
+                    </figure>
+                    <h2 class="text-center">Iuliia Zemliana</h2>
+                    <h3 class="text-center">Front End Developer</h3>
+                    <p>I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
+                    </p>
+                    <p>Creating is not just a job for me, it's a passion.
+                    </p>
+                    <p class="text-center"> <a href="#portfolio">My Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==============================
+                  SKILLS CHART
+        =============================== -->
+   <section id="skills" class="small-padding dark-bg">
+				<div class="container">
+					<div class="row skills">
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="90"><span class="percent">90</span></span>
+							<h3 class="text-center main-color">HTML</h3>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="80"><span class="percent">80</span></span>
+							<h3 class="text-center main-color">CSS</h3>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="95"><span class="percent">95</span></span>
+							<h3 class="text-center main-color">JavaScript</h3>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="90"><span class="percent">90</span></span>
+							<h3 class="text-center main-color">Responsive Design</h3>
+						</div>
+						
+					</div><!--End row -->
+					
+				</div>
+			
+			</section>
+    <!-- ======================================
+           PORTFOLIO
+       ============================== -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="text-center section-header">My Portfolio</h1>
+            <p class="text-center"> Just an example of my work</p>
+        </div>
+        <!-- ========================================
+         PROJECT ITEMS 
+    ======================================== -->
+        <div class="container">
+            <div class="row" id="projects-container">
+                
+                <a class="project-item col-md-4 web">
+							<img class="center-block project-image responsive-image" src="pics/projects1.jpg" alt="project image1">
+							<div class="hover-title">
+								<h2 class="project-title">Project is coming</h2>
+                                <!--Project Title -->
+								<p>Lorem Ipsum</p>
+                                <!--Project Subtitle -->
+							</div>
+						</a> 
+                
+                <a class="project-item col-md-4 web">
+                    <img class="center-block project-image responsive-image" src="pics/projects2.jpg" alt="project image2">
+                    <div class="hover-title">
+                        <h2 class="project-title">Project is coming</h2>
+                        <!--Project Title -->
+                        <p>Lorem Ipsum</p>
+                        <!--Project Subtitle -->
+                    </div>
+                </a>
+                <a class="project-item col-md-4 web">
+                    <img class="center-block project-image responsive-image"  src="pics/projects3.jpg" alt="project image3">
+                    <div class="hover-title">
+                        <h2 class="project-title">Project is coming</h2>
+                        <!--Project Title -->
+                        <p>Lorem Ipsum</p>
+                        <!--Project Subtitle -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================
+             CONTACT
+   ============================================== -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="text-center section-header main-color">Contact Me</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-5">
+                    <p class="form-text">I am available for freelance.
+                        <br class="form-text"> Can't wait for the next exciting project! Could it be yours?</p>
+                </div>
+                <!-- ===============================
+             CONTACT FORM
+        ===================================== -->
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 main-color">
+                    <div>
+                        <div>
+                            <input name="contactName" class="form-control requiredField" type="text" data-error-empty="is required">
+                            <label class="control-label" for="contact-name">Name</label>
+                        </div>
+                    </div>
+                    <!-- End name input -->
+                    <div class="form-group">
+                        <div>
+                            <input name="email" class="form-control requiredField" type="email" data-error-empty="is required">
+                            <label class="control-label" for="contact-mail">Email</label>
+                        </div>
+                    </div>
+                    <!-- End email input -->
+                    <div class="form-group">
+                        <div>
+                            <textarea id="contact-message" name="comments" class="form-control requiredField" rows="6" data-error-empty="is required"></textarea>
+                            <label class="control-label" for="contact-message">Message</label>
+                        </div>
+                    </div>
+                    <!-- End textarea -->
+                    <button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message3 has been sent!">Send It</button>
+                    <input type="hidden" name="submitted" id="submitted" value="true">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================
+                  FOOTER 
+     =========================================== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="#home">
+                        <img class="img-responsive" src="pics/RSVP_Logo.jpg" alt="nice logo">
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#home"> Home</a>
+                            </li>
+                            <li>
+                                <a href="#services"> Services</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio"> Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact"> Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-2 text-right">
+                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Twitter">
+                        <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Facebook">
+                        <i class="fa fa-fw fa-facebook"></i>
+                    </a>
+                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on LinkedIn">
+                        <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
