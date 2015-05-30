@@ -472,7 +472,7 @@ position: relative;
 
 #contact{
 
-background-image: url("../pics/world-map-background-dark.jpg");
+background-image: url("../pics/map.jpg");
     
 background-position-x: 50%;
   background-position-y: 50%;
@@ -491,16 +491,36 @@ background-position-x: 50%;
  color: #fff;   
 }
 
+.input{
+ border: none;
+ border-bottom: 2px solid
+ border-radius: 0;
+    background-color: #0A0D10;
+}
 
+#footer li{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+    display: inline;
+    word-spacing: 3em;
+    font-size: 20px;
+    padding: 25px;
+    font-weight: 600;
+    
+}
 
-
-
-
-
-
-
-
-
+#footer-main{
+margin-top: 25px;
+}
+#footer a{
+ color:   #89949C;  
+}
+ #footer a:hover{
+     color:#00CCCB !important;
+ }
 
 
 
