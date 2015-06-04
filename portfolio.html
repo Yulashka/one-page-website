@@ -14,6 +14,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider-min.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="css/hover.css" rel="stylesheet" media="all">
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -31,17 +33,16 @@
                 trackColor: '#11161b',
                 scaleColor: '#11161b',
              });
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
         });
     </script>
 
 </head>
-
-
 <body>
     <!-- ============================
                Main NAV
    ============================ -->
-    <div id="main-nav" class="navbar navbar-fixed-top scrolled">
+    <div id="main-nav" class="navbar navbar-fixed-top scrolled ">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
@@ -49,49 +50,47 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home">
-                    <img src="pics/RSVP_Logo.jpg" alt="nice logo">
+                <a class="navigation-bar hvr-icon-up" id="nav-icon" href="#home">
+                    <i class="fa fa-signal fa-3x"></i>
                 </a>
             </div>
             <nav id="site-nav" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class>
                         <a href="#services">
-                            <i class="fa fa-cog"></i> Specialties
+                            <i class="fa fa-cogs"></i> Specialties
                         </a>
                     </li>
                     <li class>
                         <a href="#about">
-                            <i class="fa fa-graduation-cap"></i> Profile
+                            <i class="fa fa-user"></i> Profile
                         </a>
                     </li>
                     <li>
                         <a href="#portfolio">
-                            <i class="fa fa-briefcase"></i> Portfolio
+                            <i class="fa fa-file-code-o"></i> Portfolio
                         </a>
                     </li>
                     <li>
                         <a href="#contact">
-                            <i class="fa fa-envelope"></i> Contact
+                            <i class="fa fa-envelope-o"></i> Contact
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-
     <!-- End main-nav 
 ================================== -->
     
     <!-- ==========================
 =============== HEADER
 ========================= -->
-
-    <header id="home">
+    <header id="home" class="padding-lg">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 text-center">
-                    <h1> I am Iuliia Zemliana</h1>
+                <div class="col-sm-10 col-sm-offset-1 margin-lg">
+                    <h1 class="margin-sm"> I am Iuliia Zemliana</h1>
                     <h2>
                         <span class="main-color">D</span>esigner, 
                         <span class="main-color">D</span>eveloper, 
@@ -99,9 +98,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="header-img scrollimation fade-up d1 in">
-                <img src="pics/baby.jpg" alt="photo">
-            </div>
+            
         </div>
     </header>
     <!-- end of Header -->
@@ -109,29 +106,29 @@
     <!-- =================
               MY SERVICES
           ======================================== -->
-    <section id="services">
+    <section id="services" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header">My Services</h1>
+            <h1 class="text-center section-header margin-lg">My Services</h1>
             <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-4 text-center service-item">
+                <div class="col-sm-4 col-md-4 text-center service-item">
                     <div class="service-icon">
                         <i class="fa fa-html5 fa-5x"></i>
                     </div>
-                    <h2>Clean HTML5 Code</h2>
+                    <h2 class="margin-md">Clean HTML5 Code</h2>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4  text-center service-item">
+                <div class="col-sm-4 col-md-4  text-center service-item">
                     <div class="service-icon">
                         <i class="fa fa-css3 fa-5x"></i>
                     </div>
-                    <h2>Modern CSS3 styles</h2>
+                    <h2 class="margin-md">Modern CSS3 styles</h2>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 text-center service-item">
+                <div class="col-sm-4 col-md-4 text-center service-item">
                     <div class="service-icon">
                         <i class="fa fa-mobile fa-5x"></i>
                     </div>
-                    <h2>Responsive Design</h2>
+                    <h2 class="margin-md">Responsive Design</h2>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
                 </div>
             </div>
@@ -140,60 +137,56 @@
     <!-- ===============================
                 LATEST PROJECTS
     ================================== -->
-    <section>
+    <section id="color" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header"> Latest Project</h1>
+            <h1 class="text-center section-header margin-lg"> Latest Project</h1>
             <div class="row">
-                <div class="col-sm-6">
-                    <h2> LED - Agency Portfolio</h2>
+                <div class="col-sm-7">
+                    <h2 class="margin-md"> LED - Agency Portfolio</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
                     </p>
-                    <p><a class="btn" href="#link">Visit Website</a>
+                    <a class="button hvr-grow-shadow margin-sm" href="#portfolio">Visit Website</a>
                     </p>
                 </div>
-                <div class="col-sm-6 col-sm-offset">
+                <div class="col-sm-5 col-sm-offset">
                     <img class="img-responsive" src="pics/website.jpg" alt="picture of a NUFF website">
                 </div>
             </div>
-            <hr>
         </div>
     </section>
     <!-- ===================================
-        ==============Contact Me =================== -->
-    <section>
-        <div class="container text-center">
-            <p>Logic will get you from A to B. Imagination will take you everywhere.</p>
-            <a class="btn" href="#contact">Contact Me</a>
+        ==============QUOTE =================== -->
+    <section id="quote" class="padding-lg">
+        <div class="container text-center padding-sm">
+            <p class="margin-md">Logic will get you from A to B. Imagination will take you everywhere.</p>
+            <a class="button hvr-grow-shadow margin-sm" href="#contact">Contact Me</a>
         </div>
     </section>
     <!-- ===============================
                ABOUT 
            ================================== -->
-    <section id="about">
+    <section id="about" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header">My Profile</h1>
+            <h1 class="text-center section-header margin-md">My Profile</h1>
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 tex-center">
-                    <figure>
-                        <img class="img-responsive img-circle center-block" src="pics/jane_doe.jpg" alt="my picture">
-                        <figcaption class="text-center">That's Me!</figcaption>
-                    </figure>
-                    <h2 class="text-center">Iuliia Zemliana</h2>
+                        <img id="about-img" class="img-responsive img-circle center-block margin-md" src="pics/profile.jpg" alt="my picture">
+                    <h2 class="text-center main-color margin-sm">Iuliia Zemliana</h2>
                     <h3 class="text-center">Front End Developer</h3>
-                    <p>I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
+                    <p id="about-text" class="text-center margin-lg">I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
                     </p>
-                    <p>Creating is not just a job for me, it's a passion.
-                    </p>
-                    <p class="text-center"> <a href="#portfolio">My Portfolio</a>
+                    <p id="lead" class="text-center margin-md">Creating is not just a job for me, it's a passion.</p>
+                    <p class="text-center"> <a class="all-btn hvr-grow-shadow" href="#portfolio">My Portfolio</a>
                     </p>
                 </div>
             </div>
+            
         </div>
     </section>
     <!-- ==============================
                   SKILLS CHART
         =============================== -->
-   <section id="skills" class="small-padding dark-bg">
+   <section id="skills" class="dark-bg padding-lg">
 				<div class="container">
 					<div class="row skills">
 						<div class="col-md-3 text-center">
@@ -221,19 +214,19 @@
     <!-- ======================================
            PORTFOLIO
        ============================== -->
-    <section id="portfolio">
+    <section id="portfolio" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header">My Portfolio</h1>
+            <h1 class="text-center section-header margin-mg">My Portfolio</h1>
             <p class="text-center"> Just an example of my work</p>
         </div>
         <!-- ========================================
          PROJECT ITEMS 
     ======================================== -->
         <div class="container">
-            <div class="row" id="projects-container">
+            <div class="row margin-lg" id="projects-container">
                 
-                <a class="project-item col-md-4 web">
-							<img class="center-block project-image responsive-image" src="pics/projects1.jpg" alt="project image1">
+                <a class="project-item col-md-4">
+							<img class="center-block project-image img-responsive" src="pics/projects1.jpg" alt="project image1">
 							<div class="hover-title">
 								<h2 class="project-title">Project is coming</h2>
                                 <!--Project Title -->
@@ -242,8 +235,8 @@
 							</div>
 						</a> 
                 
-                <a class="project-item col-md-4 web">
-                    <img class="center-block project-image responsive-image" src="pics/projects2.jpg" alt="project image2">
+                <a class="project-item col-md-4">
+                    <img class="center-block project-image img-responsive" src="pics/projects2.jpg" alt="project image2">
                     <div class="hover-title">
                         <h2 class="project-title">Project is coming</h2>
                         <!--Project Title -->
@@ -251,8 +244,8 @@
                         <!--Project Subtitle -->
                     </div>
                 </a>
-                <a class="project-item col-md-4 web">
-                    <img class="center-block project-image responsive-image"  src="pics/projects3.jpg" alt="project image3">
+                <a class="project-item col-md-4">
+                    <img class="center-block project-image img-responsive"  src="pics/projects3.jpg" alt="project image3">
                     <div class="hover-title">
                         <h2 class="project-title">Project is coming</h2>
                         <!--Project Title -->
@@ -266,9 +259,9 @@
     <!-- ===========================================
              CONTACT
    ============================================== -->
-    <section id="contact">
+    <section id="contact" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header main-color">Contact Me</h1>
+            <h1 class="text-center section-header main-color margin-lg">Contact Me</h1>
             <div class="row">
                 <div class="col-sm-6 col-md-5">
                     <p class="form-text">I am available for freelance.
@@ -279,27 +272,29 @@
         ===================================== -->
                 <form id="contact-form" class="col-sm-6 col-md-offset-1 main-color">
                     <div>
-                        <div>
-                            <input name="contactName" class="form-control requiredField input" type="text" data-error-empty="is required">
-                            <label class="control-label" for="contact-name">Name</label>
+                        <div><label class="control-label" for="contact-name">Name</label>
+                            <input id="contactName" name="contactName" class="form-control requiredField input" type="text" data-error-empty="is required">
+                            
                         </div>
                     </div>
                     <!-- End name input -->
                     <div class="form-group">
                         <div>
-                            <input name="email" class="form-control requiredField input" type="email" data-error-empty="is required">
                             <label class="control-label" for="contact-mail">Email</label>
+                            <input name="email" class="form-control requiredField input" type="email" data-error-empty="is required">
+                            
                         </div>
                     </div>
                     <!-- End email input -->
                     <div class="form-group">
                         <div>
-                            <textarea id="contact-message" name="comments" class="form-control requiredField input" rows="6" data-error-empty="is required"></textarea>
                             <label class="control-label" for="contact-message">Message</label>
+                            <textarea id="contact-message" name="comments" class="form-control requiredField input" rows="6" data-error-empty="is required"></textarea>
+                            
                         </div>
                     </div>
                     <!-- End textarea -->
-                    <button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message3 has been sent!">Send It</button>
+                    <button name="submit" type="submit" class="pull-right hvr-grow-shadow margin-sm" id="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message3 has been sent!">Send It</button>
                     <input type="hidden" name="submitted" id="submitted" value="true">
                 </form>
             </div>
@@ -308,45 +303,28 @@
     <!-- ===================================================
                   FOOTER 
      =========================================== -->
-    <footer>
+    <footer class="padding-sm">
         <div class="container" id="footer-main">
             <div class="row">
-                <div class="col-sm-2">
-                    <a href="#home">
-                        <img class="img-responsive" src="pics/RSVP_Logo.jpg" alt="nice logo">
-                    </a>
+                <div class="col-sm-6">
+                <p>© 2015 Iuliia Zemliana. All Rights Reserved.</p>
                 </div>
-                <div class="col-sm-8">
-                    <nav id="footer">
-                        <ul>
-                            <li>
-                                <a href="#home"> Home</a>
-                            </li>
-                            <li>
-                                <a href="#services"> Services</a>
-                            </li>
-                            <li>
-                                <a href="#portfolio"> Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#contact"> Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-sm-2">
+                <div class="col-sm-6">
+                    <div class="pull-right">
                     <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Twitter">
-                        <i class="fa fa-fw fa-twitter"></i>
+                        <i class="fa fa-fw fa-twitter hvr-buzz-out"></i>
                     </a>
                     <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Facebook">
-                        <i class="fa fa-fw fa-facebook"></i>
+                        <i class="fa fa-fw fa-facebook hvr-buzz-out"></i>
                     </a>
                     <a href="#" data-toggle="tooltip" title data-original-title="Folow me on LinkedIn">
-                        <i class="fa fa-fw fa-linkedin"></i>
+                        <i class="fa fa-fw fa-linkedin hvr-buzz-out"></i>
                     </a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+     <!-- End footer -->
 </body>
 </html>
