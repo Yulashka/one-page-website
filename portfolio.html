@@ -13,18 +13,21 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/flexslider-min.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Droid+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href="css/hover.css" rel="stylesheet" media="all">
-    
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/jquery.flexslider-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 
     <script type="text/javascript" charset="utf-8">
-        $(function() {
+        $(function () {
             $('.flexslider').flexslider();
             $('.chart').easyPieChart({
                 //your configuration goes here
@@ -32,12 +35,24 @@
                 size: 210,
                 trackColor: '#11161b',
                 scaleColor: '#11161b',
-             });
-            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            });
+            //$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+            $('.animate').addClass("fade");
+            
+            //Animate from top
+            $('.animate').waypoint(function () {
+                $(this).toggleClass($(this).data('animated'));
+            }, {
+                offset: 'bottom-in-view'
+            });
+
+           
+
         });
     </script>
 
 </head>
+
 <body>
     <!-- ============================
                Main NAV
@@ -45,7 +60,7 @@
     <div id="main-nav" class="navbar navbar-fixed-top scrolled ">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-expanded="true">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -82,7 +97,7 @@
     </div>
     <!-- End main-nav 
 ================================== -->
-    
+
     <!-- ==========================
 =============== HEADER
 ========================= -->
@@ -90,15 +105,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 margin-lg">
-                    <h1 class="margin-sm"> I am Iuliia Zemliana</h1>
-                    <h2>
+                    <h1 class="margin-sm animate" data-animated="animated fadeInDown"> I am Iuliia Zemliana</h1>
+                    <h2 class="animate" data-animated="animated fadeInDown">
                         <span class="main-color">D</span>esigner, 
                         <span class="main-color">D</span>eveloper, 
                         <span class="main-color">D</span>reamer
                     </h2>
+
                 </div>
             </div>
-            
+
         </div>
     </header>
     <!-- end of Header -->
@@ -108,8 +124,8 @@
           ======================================== -->
     <section id="services" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header margin-lg">My Services</h1>
-            <div class="row">
+            <h1 class="text-center section-header margin-md">My Services</h1>
+            <div class="row animate" data-animated="animated fadeInLeft">
                 <div class="col-sm-4 col-md-4 text-center service-item">
                     <div class="service-icon">
                         <i class="fa fa-html5 fa-5x"></i>
@@ -141,14 +157,14 @@
         <div class="container">
             <h1 class="text-center section-header margin-lg"> Latest Project</h1>
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7 animate" data-animated="animated fadeInLeft">
                     <h2 class="margin-md"> LED - Agency Portfolio</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
                     </p>
                     <a class="button hvr-grow-shadow margin-sm" href="#portfolio">Visit Website</a>
                     </p>
                 </div>
-                <div class="col-sm-5 col-sm-offset">
+                <div class="col-sm-5 col-sm-offset animate" data-animated="animated fadeInRight">
                     <img class="img-responsive" src="pics/website.jpg" alt="picture of a NUFF website">
                 </div>
             </div>
@@ -157,7 +173,7 @@
     <!-- ===================================
         ==============QUOTE =================== -->
     <section id="quote" class="padding-lg">
-        <div class="container text-center padding-sm">
+        <div class="container text-center padding-sm animate" data-animated="animated fadeInUp">
             <p class="margin-md">Logic will get you from A to B. Imagination will take you everywhere.</p>
             <a class="button hvr-grow-shadow margin-sm" href="#contact">Contact Me</a>
         </div>
@@ -170,71 +186,72 @@
             <h1 class="text-center section-header margin-md">My Profile</h1>
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 tex-center">
-                        <img id="about-img" class="img-responsive img-circle center-block margin-md" src="pics/profile.jpg" alt="my picture">
-                    <h2 class="text-center main-color margin-sm">Iuliia Zemliana</h2>
-                    <h3 class="text-center">Front End Developer</h3>
-                    <p id="about-text" class="text-center margin-lg">I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
+                    <img id="about-img" class="img-responsive img-circle center-block margin-md animate" data-animated="animated fadeInLeft" src="pics/profile.jpg" alt="my picture">
+                    <h2 class="text-center main-color margin-sm animate" data-animated="animated fadeInRight">Iuliia Zemliana</h2>
+                    <h3 class="text-center animate" data-animated="animated fadeInRight">Front End Developer</h3>
+                    <p id="about-text" class="text-center margin-lg animate" data-animated="animated fadeInLeft">I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
                     </p>
-                    <p id="lead" class="text-center margin-md">Creating is not just a job for me, it's a passion.</p>
-                    <p class="text-center"> <a class="all-btn hvr-grow-shadow" href="#portfolio">My Portfolio</a>
+                    <p id="lead" class="text-center margin-md animate" data-animated="animated fadeInRight">Creating is not just a job for me, it's a passion.</p>
+                    <p class="text-center animate" data-animated="animated fadeInRight"> <a class="all-btn hvr-grow-shadow" href="#portfolio">My Portfolio</a>
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </section>
     <!-- ==============================
                   SKILLS CHART
         =============================== -->
-   <section id="skills" class="dark-bg padding-lg">
-				<div class="container">
-					<div class="row skills">
-						<div class="col-md-3 text-center">
-							<span class="chart" data-percent="90"><span class="percent">90</span></span>
-							<h3 class="text-center main-color">HTML</h3>
-						</div>
-						<div class="col-md-3 text-center">
-							<span class="chart" data-percent="80"><span class="percent">80</span></span>
-							<h3 class="text-center main-color">CSS</h3>
-						</div>
-						<div class="col-md-3 text-center">
-							<span class="chart" data-percent="95"><span class="percent">95</span></span>
-							<h3 class="text-center main-color">JavaScript</h3>
-						</div>
-						<div class="col-md-3 text-center">
-							<span class="chart" data-percent="90"><span class="percent">90</span></span>
-							<h3 class="text-center main-color">Responsive Design</h3>
-						</div>
-						
-					</div><!--End row -->
-					
-				</div>
-			
-			</section>
+    <section id="skills" class="dark-bg padding-lg">
+        <div class="container">
+            <div class="row skills">
+                <div class="col-md-3 text-center">
+                    <span class="chart" data-percent="90"><span class="percent">90</span></span>
+                    <h3 class="text-center main-color">HTML</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <span class="chart" data-percent="80"><span class="percent">80</span></span>
+                    <h3 class="text-center main-color">CSS</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <span class="chart" data-percent="95"><span class="percent">95</span></span>
+                    <h3 class="text-center main-color">JavaScript</h3>
+                </div>
+                <div class="col-md-3 text-center">
+                    <span class="chart" data-percent="90"><span class="percent">90</span></span>
+                    <h3 class="text-center main-color">Responsive Design</h3>
+                </div>
+
+            </div>
+            <!--End row -->
+
+        </div>
+
+    </section>
     <!-- ======================================
            PORTFOLIO
        ============================== -->
     <section id="portfolio" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header margin-mg">My Portfolio</h1>
+            <h1 class="text-center section-header margin-md">My Portfolio</h1>
             <p class="text-center"> Just an example of my work</p>
         </div>
         <!-- ========================================
          PROJECT ITEMS 
     ======================================== -->
         <div class="container">
-            <div class="row margin-lg" id="projects-container">
-                
+            <div class="row margin-lg animate" data-animated="animated fadeInUp" id="projects-container">
+
                 <a class="project-item col-md-4">
-							<img class="center-block project-image img-responsive" src="pics/projects1.jpg" alt="project image1">
-							<div class="hover-title">
-								<h2 class="project-title">Project is coming</h2>
-                                <!--Project Title -->
-								<p>Lorem Ipsum</p>
-                                <!--Project Subtitle -->
-							</div>
-						</a> 
-                
+                    <img class="center-block project-image img-responsive" src="pics/projects1.jpg" alt="project image1">
+                    <div class="hover-title">
+                        <h2 class="project-title">Project is coming</h2>
+                        <!--Project Title -->
+                        <p>Lorem Ipsum</p>
+                        <!--Project Subtitle -->
+                    </div>
+                </a>
+
                 <a class="project-item col-md-4">
                     <img class="center-block project-image img-responsive" src="pics/projects2.jpg" alt="project image2">
                     <div class="hover-title">
@@ -245,7 +262,7 @@
                     </div>
                 </a>
                 <a class="project-item col-md-4">
-                    <img class="center-block project-image img-responsive"  src="pics/projects3.jpg" alt="project image3">
+                    <img class="center-block project-image img-responsive" src="pics/projects3.jpg" alt="project image3">
                     <div class="hover-title">
                         <h2 class="project-title">Project is coming</h2>
                         <!--Project Title -->
@@ -261,20 +278,21 @@
    ============================================== -->
     <section id="contact" class="padding-lg">
         <div class="container">
-            <h1 class="text-center section-header main-color margin-lg">Contact Me</h1>
+            <h1 class="text-center section-header main-color margin-md">Contact Me</h1>
             <div class="row">
-                <div class="col-sm-6 col-md-5">
+                <div class="col-sm-6 col-md-5 animate" data-animated="animated fadeInLeft">
                     <p class="form-text">I am available for freelance.
                         <br class="form-text"> Can't wait for the next exciting project! Could it be yours?</p>
                 </div>
                 <!-- ===============================
              CONTACT FORM
         ===================================== -->
-                <form id="contact-form" class="col-sm-6 col-md-offset-1 main-color">
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 main-color animate" data-animated="animated fadeInRight">
                     <div>
-                        <div><label class="control-label" for="contact-name">Name</label>
+                        <div>
+                            <label class="control-label" for="contact-name">Name</label>
                             <input id="contactName" name="contactName" class="form-control requiredField input" type="text" data-error-empty="is required">
-                            
+
                         </div>
                     </div>
                     <!-- End name input -->
@@ -282,7 +300,7 @@
                         <div>
                             <label class="control-label" for="contact-mail">Email</label>
                             <input name="email" class="form-control requiredField input" type="email" data-error-empty="is required">
-                            
+
                         </div>
                     </div>
                     <!-- End email input -->
@@ -290,7 +308,7 @@
                         <div>
                             <label class="control-label" for="contact-message">Message</label>
                             <textarea id="contact-message" name="comments" class="form-control requiredField input" rows="6" data-error-empty="is required"></textarea>
-                            
+
                         </div>
                     </div>
                     <!-- End textarea -->
@@ -306,25 +324,26 @@
     <footer class="padding-sm">
         <div class="container" id="footer-main">
             <div class="row">
-                <div class="col-sm-6">
-                <p>© 2015 Iuliia Zemliana. All Rights Reserved.</p>
+                <div class="col-md-10">
+                    <p>© 2015 Iuliia Zemliana. All Rights Reserved.</p>
                 </div>
-                <div class="col-sm-6">
-                    <div class="pull-right">
-                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Twitter">
-                        <i class="fa fa-fw fa-twitter hvr-buzz-out"></i>
-                    </a>
-                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Facebook">
-                        <i class="fa fa-fw fa-facebook hvr-buzz-out"></i>
-                    </a>
-                    <a href="#" data-toggle="tooltip" title data-original-title="Folow me on LinkedIn">
-                        <i class="fa fa-fw fa-linkedin hvr-buzz-out"></i>
-                    </a>
+                <div class="col-md-2">
+                    <div>
+                        <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Twitter">
+                            <i class="fa fa-fw fa-twitter hvr-buzz-out"></i>
+                        </a>
+                        <a href="#" data-toggle="tooltip" title data-original-title="Folow me on Facebook">
+                            <i class="fa fa-fw fa-facebook hvr-buzz-out"></i>
+                        </a>
+                        <a href="#" data-toggle="tooltip" title data-original-title="Folow me on LinkedIn">
+                            <i class="fa fa-fw fa-linkedin hvr-buzz-out"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-     <!-- End footer -->
+    <!-- End footer -->
 </body>
+
 </html>
