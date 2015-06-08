@@ -28,32 +28,36 @@
 
     <script type="text/javascript" charset="utf-8">
         $(function () {
-            $('.flexslider').flexslider();
-            $('.chart').easyPieChart({
-                //your configuration goes here
-                barColor: '#1eefe8',
-                size: 210,
-                trackColor: '#11161b',
-                scaleColor: '#11161b',
+
+            $('#skills').waypoint(function () {
+                $('.chart').easyPieChart({
+                    //your configuration goes here
+                    barColor: '#1eefe8',
+                    size: 210,
+                    trackColor: '#11161b',
+                    scaleColor: '#11161b',
+                });
+            }, {
+                offset: '50%'
             });
+            $('.flexslider').flexslider();
+
             //$("body").tooltip({ selector: '[data-toggle=tooltip]' });
             $('.animate').addClass("fade");
-            
+
             //Animate from top
             $('.animate').waypoint(function () {
                 $(this).toggleClass($(this).data('animated'));
             }, {
-                offset: 'bottom-in-view'
+                offset: '80%',
+                triggerOnce: true
             });
-
-           
-
         });
     </script>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav">
     <!-- ============================
                Main NAV
    ============================ -->
