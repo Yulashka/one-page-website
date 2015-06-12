@@ -25,7 +25,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/jquery.flexslider-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-
+<script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
     <script type="text/javascript" charset="utf-8">
         $(function () {
 
@@ -61,7 +62,7 @@
     <!-- ============================
                Main NAV
    ============================ -->
-    <div id="main-nav" class="navbar navbar-fixed-top scrolled ">
+    <div id="main-nav" class="navbar navbar-fixed-top scrolled">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-expanded="true">
@@ -76,22 +77,22 @@
             <nav id="site-nav" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class>
-                        <a href="#services">
+                        <a href="#services" class="page-scroll">
                             <i class="fa fa-cogs"></i> Specialties
                         </a>
                     </li>
                     <li class>
-                        <a href="#about">
+                        <a href="#about" class="page-scroll">
                             <i class="fa fa-user"></i> Profile
                         </a>
                     </li>
                     <li>
-                        <a href="#portfolio">
+                        <a href="#portfolio" class="page-scroll">
                             <i class="fa fa-file-code-o"></i> Portfolio
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a href="#contact" class="page-scroll">
                             <i class="fa fa-envelope-o"></i> Contact
                         </a>
                     </li>
