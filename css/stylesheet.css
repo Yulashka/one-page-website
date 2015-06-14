@@ -128,9 +128,8 @@ margin-top: 4px;}
 	height:100%;
 	min-height:860px;
 	background-attachment: fixed;
-	background-size: 100%;
+	
 	background-size: cover;
-	overflow: hidden;
     background-image: url(../pics/computer1.jpg);} 
 
 
