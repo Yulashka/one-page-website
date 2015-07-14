@@ -16,6 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville|Droid+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href="css/hover.css" rel="stylesheet" media="all">
+    
     <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -45,14 +46,19 @@
 
             //$("body").tooltip({ selector: '[data-toggle=tooltip]' });
             $('.animate').addClass("fade");
-
-            //Animate from top
-            $('.animate').waypoint(function () {
+            
+            var aniFunc = function () {
                 $(this).toggleClass($(this).data('animated'));
-            }, {
-                offset: '80%',
-                triggerOnce: true
-            });
+            };
+            
+            //Animate from top
+            $('.animate').waypoint(
+                aniFunc, 
+                {
+                    offset: '80%',
+                    triggerOnce: true
+                }
+            );
             
         });
     </script>
@@ -111,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 margin-lg">
-                    <h1 class="margin-sm animate" data-animated="animated fadeInDown"> I am Iuliia Zemliana</h1>
+                    <h1 id="animation-home" class="margin-sm animate" data-animated="animated fadeInDown"> I am Iuliia Zemliana</h1>
                     <h2 class="animate" data-animated="animated fadeInDown">
                         <span class="main-color">D</span>esigner, 
                         <span class="main-color">D</span>eveloper, 
@@ -128,10 +134,10 @@
     <!-- =================
               MY SERVICES
           ======================================== -->
-    <section id="services" class="padding-lg">
+    <section id="services" class="padding-lg margin-lg">
         <div class="container">
             <h1 class="text-center section-header margin-md">My Services</h1>
-            <div class="row animate" data-animated="animated fadeInLeft">
+            <div id="animation-skills" class="row animate" data-animated="animated fadeIn">
                 <div class="col-sm-4 col-md-4 text-center service-item">
                     <div class="service-icon">
                         <i class="fa fa-html5 fa-5x"></i>
@@ -163,14 +169,14 @@
         <div class="container">
             <h1 class="text-center section-header margin-lg"> Latest Project</h1>
             <div class="row">
-                <div class="col-sm-7 animate" data-animated="animated fadeInLeft">
+                <div class="col-sm-7 animate" data-animated="animated fadeIn" id="animation-project">
                     <h2 class="margin-md"> LED - Agency Portfolio</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
                     </p>
                     <a class="button hvr-grow-shadow margin-sm" href="#portfolio">Visit Website</a>
                     </p>
                 </div>
-                <div class="col-sm-5 col-sm-offset animate" data-animated="animated fadeInRight">
+                <div class="col-sm-5 col-sm-offset animate" data-animated="animated fadeIn" id="animation-project-img">
                     <img class="img-responsive" src="pics/website.jpg" alt="picture of a NUFF website">
                 </div>
             </div>
@@ -191,14 +197,14 @@
         <div class="container">
             <h1 class="text-center section-header margin-md">My Profile</h1>
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 tex-center">
-                    <img id="about-img" class="img-responsive img-circle center-block margin-md animate" data-animated="animated fadeInLeft" src="pics/profile.jpg" alt="my picture">
-                    <h2 class="text-center main-color margin-sm animate" data-animated="animated fadeInRight">Iuliia Zemliana</h2>
-                    <h3 class="text-center animate" data-animated="animated fadeInRight">Front End Developer</h3>
-                    <p id="about-text" class="text-center margin-lg animate" data-animated="animated fadeInLeft">I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
+                <div class="col-sm-10 col-sm-offset-1 tex-center" id="animation-about">
+                    <img id="about-img" class="img-responsive img-circle center-block margin-md animate" data-animated="animated fadeIn" src="pics/profile.jpg" alt="my picture">
+                    <h2 class="text-center main-color margin-sm animate" data-animated="animated fadeIn">Iuliia Zemliana</h2>
+                    <h3 class="text-center animate" data-animated="animated fadeIn">Front End Developer</h3>
+                    <p id="about-text" class="text-center margin-lg animate" data-animated="animated fadeIn">I am Iuliia Zemliana, a twenty four year old Front End Web Developer from Seattle. I have graduated with a non-degree certificate in HTML5, CSS3 and Responsive Design for Web Development, from the University of Washington. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.
                     </p>
-                    <p id="lead" class="text-center margin-md animate" data-animated="animated fadeInRight">Creating is not just a job for me, it's a passion.</p>
-                    <p class="text-center animate" data-animated="animated fadeInRight"> <a class="all-btn hvr-grow-shadow" href="#portfolio">My Portfolio</a>
+                    <p id="lead" class="text-center margin-md animate" data-animated="animated fadeIn">Creating is not just a job for me, it's a passion.</p>
+                    <p class="text-center animate" data-animated="animated fadeIn"> <a class="all-btn hvr-grow-shadow" href="#portfolio">My Portfolio</a>
                     </p>
                 </div>
             </div>
@@ -282,7 +288,7 @@
     <!-- ===========================================
              CONTACT
    ============================================== -->
-    <section id="contact" class="padding-lg">
+    <section id="contact" class="padding-lg margin-lg">
         <div class="container">
             <h1 class="text-center section-header main-color margin-md">Contact Me</h1>
             <div class="row">
@@ -329,7 +335,7 @@
      =========================================== -->
     <footer class="padding-sm">
         <div class="container" id="footer-main">
-            <div class="row">
+            <div class="row" id="animation-contact">
                 <div class="col-md-10">
                     <p>© 2015 Iuliia Zemliana. All Rights Reserved.</p>
                 </div>

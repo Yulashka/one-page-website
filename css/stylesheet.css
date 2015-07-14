@@ -20,6 +20,8 @@ a:focus{
   margin-bottom: 0px;
   font-size: 29px;
 }
+
+
 /*------------------
 ------ Nav ------
 --------------------*/
@@ -136,7 +138,9 @@ margin-top: 4px;}
 	height:100%;
 	background-attachment: fixed;
 	background-size: cover;
-    background-image: url(../pics/computer1.jpg);} 
+    background-image: url(../pics/computer1.jpg);
+    background-size: 100%;
+    overflow: hidden;} 
 
 
 
@@ -165,6 +169,31 @@ p{
 
 
 
+#animation-h2{
+ -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.4s;
+       -moz-animation-delay: 0.4s;
+        -ms-animation-delay: 0.4s;
+         -o-animation-delay: 0.4s;
+            animation-delay: 0.4s;   
+}
+
+#animation-home{
+    -webkit-animation-duration: 3s;
+       -moz-animation-duration: 3s;
+        -ms-animation-duration: 3s;
+         -o-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 0.4s;
+       -moz-animation-delay: 0.4s;
+        -ms-animation-delay: 0.4s;
+         -o-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
 /*-------------- MY SERVICES
 -------------- */
 .section-header {
@@ -208,9 +237,46 @@ p{
     transition: all .3s ease-in;
     line-height: 180px;}
 
+#animation-skills {
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+       -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+         -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
 /*--------------------------------
              MY LATEST PROJECTS
 -------------------------------- */
+#animation-project {
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+       -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+         -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;}
+
+
+#animation-project-img {
+    -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+       -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+         -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;}
+
 
 #color{
 background-color: #fbfbfc;}
@@ -295,6 +361,21 @@ background-color: #fbfbfc;}
 #lead{
     font-size: 28px;
     font-weight: 300;}
+
+#animation-about{
+    -webkit-animation-duration: 3s;
+       -moz-animation-duration: 3s;
+        -ms-animation-duration: 3s;
+         -o-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 0.4s;
+       -moz-animation-delay: 0.4s;
+        -ms-animation-delay: 0.4s;
+         -o-animation-delay: 0.4s;
+            animation-delay: 0.4s;}
+
+
+
 /*-------------------------SKILLS
 ----------------------------------*/
 #skills{
@@ -340,18 +421,17 @@ background-color: #fbfbfc;}
 	background:#fff;}
 
 #projects-container{
-	-webkit-transform:scale(1) translateY(0);
-	transform:scale(1) translateY(0);
-	opacity:1;
-	-webkit-transition:opacity .6s ease-out,-webkit-transform .3s ease-out;
-	transition:opacity .6s ease-out,transform .3s ease-out;}
+ -webkit-animation-duration: 2s;
+       -moz-animation-duration: 2s;
+        -ms-animation-duration: 2s;
+         -o-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+       -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+         -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;}
 
-#projects-container.anim-out{
-	-webkit-transform:scale(.96) translateY(40px);
-	transform:scale(.96) translateY(40px);
-	opacity:0;
-	-webkit-transition:opacity .4s ease-out,-webkit-transform .4s ease-out;
-	transition:opacity .4s ease-out,transform .4s ease-out;} 
 
 #projects-container .project-item .project-image{
 	-webkit-transition: all .4s ease-out;
@@ -508,6 +588,20 @@ background-color: #fbfbfc;}
 
 #contact-form #contactName{
     margin-bottom: 20px;}
+
+
+#animation-contact{
+ -webkit-animation-duration: 3s;
+       -moz-animation-duration: 3s;
+        -ms-animation-duration: 3s;
+         -o-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 0.2s;
+       -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+         -o-animation-delay: 0.2s;
+            animation-delay: 0.2s;}
+
 /* -----------------FOOTER 
 ------------------------ */
 
