@@ -139,10 +139,13 @@ margin-top: 4px;}
 	background-attachment: fixed;
 	background-size: cover;
     background-image: url(../pics/computer1.jpg);
-   
+    background-size: 100%;
     overflow: hidden;} 
 
-
+@media screen and (max-device-width: 1024px){
+#home{
+    background-attachment: scroll;}
+}
 
 #home .row{
 	position: absolute;
