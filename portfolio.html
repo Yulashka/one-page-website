@@ -26,45 +26,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.3.0/jquery.flexslider-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
+    <script src="js/javascript.js"></script>
     <script src="js/scrolling-nav.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(function () {
+    <script src="js/jquery.easing.min.js"></script>
 
-            $('#skills').waypoint(function () {
-                $('.chart').easyPieChart({
-                    //your configuration goes here
-                    barColor: '#1eefe8',
-                    size: 210,
-                    trackColor: '#11161b',
-                    scaleColor: '#11161b',
-                });
-            }, {
-                offset: '50%'
-            });
-            $('.flexslider').flexslider();
-
-            //$("body").tooltip({ selector: '[data-toggle=tooltip]' });
-            $('.animate').addClass("fade");
-            
-            var aniFunc = function () {
-                $(this).toggleClass($(this).data('animated'));
-            };
-            
-            //Animate from top
-            $('.animate').waypoint(
-                aniFunc, 
-                {
-                    offset: '80%',
-                    triggerOnce: true
-                }
-            );
-            
-        });
-    </script>
+   
 
 </head>
-
 <body data-spy="scroll" data-target="#main-nav">
     <!-- ============================
                Main NAV
@@ -174,7 +142,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.
                     </p>
                     <a class="button hvr-grow-shadow margin-sm" href="#portfolio">Visit Website</a>
-                    </p>
+                    
                 </div>
                 <div class="col-sm-5 col-sm-offset animate" data-animated="animated fadeIn" id="animation-project-img">
                     <img class="img-responsive" src="pics/website.jpg" alt="picture of a NUFF website">
